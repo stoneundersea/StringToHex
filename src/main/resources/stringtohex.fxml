@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="513.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.java.yangnj.MainController">
+    <children>
+        <Button fx:id="stringToHexButton" layoutX="42.0" layoutY="431.0" mnemonicParsing="false" onAction="#buttonClicked" text="String To Hex">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="hexToStringButton" layoutX="568.0" layoutY="431.0" mnemonicParsing="false" onAction="#buttonClicked" text="Hex To String">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Label layoutX="36.0" layoutY="303.0" prefHeight="47.0" prefWidth="150.0" text="Hex Charset">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="charsetSelect" layoutX="267.0" layoutY="303.0" onMouseDragEntered="#choiceBoxClicked" prefHeight="47.0" prefWidth="293.0" styleClass="charsetSelect" stylesheets="@stringtohex.css" />
+        <Label layoutX="42.0" layoutY="33.0" prefHeight="47.0" prefWidth="116.0" text="String">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="42.0" layoutY="114.0" prefHeight="47.0" prefWidth="116.0" text="Hex">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <TextField fx:id="stringText" layoutX="179.0" layoutY="39.0" prefHeight="51.0" prefWidth="226.0">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </TextField>
+      <Label layoutX="36.0" layoutY="197.0" prefHeight="47.0" prefWidth="116.0" text="Unicode">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+        <TextField fx:id="hexText" layoutX="179.0" layoutY="120.0" prefHeight="51.0" prefWidth="586.0">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </TextField>
+      <TextField fx:id="unicodeText" layoutX="179.0" layoutY="195.0" prefHeight="51.0" prefWidth="586.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>
